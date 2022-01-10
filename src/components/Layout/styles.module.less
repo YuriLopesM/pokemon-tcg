@@ -1,0 +1,86 @@
+@import '~antd/lib/style/themes/default.less';
+
+.trigger {
+    padding: 0 1.5rem;
+    font-size: 1.125rem;
+    line-height: 4rem;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+        color: @blue-6;
+    }
+}
+  
+.logo {
+    height: 2rem;
+    margin: 2rem 1rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+        30% {
+            transform: rotate(90deg);
+        }	
+        80% {
+            transform: rotate(360deg);
+        }
+    }
+
+    &:hover {
+        transform: rotate(360deg);
+        animation: animate 1.3s linear infinite;
+    }
+    
+    strong {
+        color: @blue-2;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
+
+.sider {
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+}
+  
+.layout {
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    margin-left: 5rem;
+
+
+    .header {
+        padding: 0; 
+        background-color: #FFF;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .content {
+        margin: 5rem auto;
+        padding: 1.5rem;
+        min-height: 100%;
+        width: 100%;
+
+        > footer {
+            width: 100%;
+            padding: 2rem 0;
+            text-align: center
+        }
+    }
+
+}

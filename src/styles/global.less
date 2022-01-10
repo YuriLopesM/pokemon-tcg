@@ -1,0 +1,31 @@
+@import '~antd/lib/style/themes/default.less';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+    background: #001529
+}
+
+::-webkit-scrollbar-thumb {
+    background: #204568;
+    border-radius: 0.5rem;
+    transition: background .4s ease-in;
+}
+
+.modalStyle .ant-modal-content{
+    box-shadow: none;
+
+    .ant-modal-body {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+}
